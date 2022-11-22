@@ -164,10 +164,11 @@
     ]; //用来设置的颜色
     const names = [
         "季然🌙",
-        "董事长🍵",
+        "季董事长🍵",
         "人鱼王子🧜‍♂️",
         "锄头⛏️",
-
+        "季老师👨‍🏫",
+        "季校长💯",
     ]; //用来设置的字
 
     var canvas = document.getElementById("floating-words");
@@ -222,7 +223,7 @@
         // ctx.font="20px";
         ctx.fillStyle = colors[i % 5];
         ctx.fillText(
-            names[i%4],
+            names[i%6],
             this.x - this.width * 0.5,
             this.y - this.height * 0.5,
             this.width,
