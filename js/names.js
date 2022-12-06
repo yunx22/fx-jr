@@ -1,6 +1,5 @@
 const colors = [
     "#feeb75",
-    "#a3c585",
     "#63c5da",
     "#ffd801",
     "#5579c6",
@@ -9,9 +8,7 @@ const colors = [
 const names = [
     "季然🌙",
     "季董事长🍵",
-    "人鱼王子🧜‍♂️",
     "锄头⛏️",
-    "季老师👨‍🏫",
 ]; //用来设置的字
 
 var canvas = document.getElementById("floating-words");
@@ -66,7 +63,7 @@ Label.prototype.draw = function (i) {
     // ctx.font="20px";
     ctx.fillStyle = colors[i % 5];
     ctx.fillText(
-        names[i%5],
+        names[i%3],
         this.x - this.width * 0.5,
         this.y - this.height * 0.5,
         this.width,
